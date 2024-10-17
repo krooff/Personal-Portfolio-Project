@@ -1,0 +1,147 @@
+/* General Styling */
+body {
+    font-family: 'Georgia', serif; /* Softer font for a natural vibe */
+    margin: 0;
+    padding: 0;
+    background-color: #7a6907; /* Light green for a calm, natural feel */
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); 
+    background-repeat: repeat;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(145deg, #4caf50, #81c784); /* Shades of green */
+    color: white;
+}
+
+/* Profile Image Styling */
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Circular profile image */
+    border: 4px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: rotate 100s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Headings */
+h1 {
+    background: linear-gradient(to right, #2e7d32, #66bb6a); /* Green gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(145deg, #8bc34a, #558b2f); /* Green gradient */
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff9800; /* Earthy orange */
+    transition: color 0.3s ease;
+}
+
+/* Main Content */
+.main-content {
+    background: linear-gradient(145deg, #6e6704, #857103);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+th {
+    background-color: rgba(114, 76, 6, 0.8); /* Soft green header */
+}
+
+/* Buttons */
+button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #43a047; /* Nature-inspired green */
+    color: rgb(233, 162, 10);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05); /* Subtle interaction feedback */
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(145deg, #558b2f, #33691e); 
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-style: italic;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    border: 1px solid #c8e6c9;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Georgia', serif;
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    border-color: #81c784;
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+    }
+}
